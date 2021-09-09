@@ -1,0 +1,9 @@
+type Movie{
+    id: ID! @id
+    title: String!
+    gender: String
+    language: String
+    duration: Float
+    sinopsis: String
+    room: Room! @relation(link: INLINE)
+}

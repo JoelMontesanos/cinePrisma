@@ -1,0 +1,9 @@
+type Cinema{
+    id: ID! @id
+    name: String!
+    location: String!
+    city: String!
+    manager: Employee @relation(link: INLINE)
+    phone: Int!
+    capacity: Int!
+}

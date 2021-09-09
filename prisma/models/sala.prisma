@@ -1,0 +1,15 @@
+type Room{
+    id: ID! @id
+    number: Int!
+    capacity: Int!
+    screen: TypeScreen!
+    chairs: Chairs @relation(link: INLINE)!
+}
+
+
+enum TypeScreen {
+    IMAX
+    NORMAL
+    NULL
+    MACRO
+}

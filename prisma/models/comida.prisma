@@ -1,0 +1,18 @@
+type Food{
+    id: ID! @id
+    type: TypeFood
+    name: String!
+    price: Int!
+}
+
+enum TypeFood { 
+    PALOMITAS
+    DULCES
+    REFRESCO
+    NACHOS
+    ICE
+    HOTDOG
+    CREPA
+}
+
+#dividir los tipos y los productos

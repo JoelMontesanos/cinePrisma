@@ -1,8 +1,8 @@
-type User {
+type User implements Node {
   id: ID! @id
   createdAt: DateTime! @createdAt
-  updatedAt: DateTime! @updatedAt
-  email: String! @unique
-  password: String
-  name: String!
+  updatedAt: DateTime! @updatedAt  
+  movie: Room! @relation(link: INLINE)
+  points: Int!
+  membership: Membership @relation(link: INLINE)
 }
