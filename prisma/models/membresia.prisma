@@ -1,0 +1,12 @@
+type Membership  implements Node{
+    id: ID! @id
+    createdAt: DateTime! @createdAt!
+    updatedAt: DateTime! @updatedAt!
+    name: String!
+    email: String! @unique
+    password: String! 
+    phone: Int!
+    card: Card @relation(link: INLINE)!
+    earnedPoints: Int!
+    cardNumber: Int!
+}

@@ -1,11 +1,17 @@
 endpoint: ${env:URL_BASE}/pyt/${env:ENVIROMENT}
 databaseType: document
 datamodel:
-  - ./models/movie.prisma
-  - ./models/order.prisma
-  - ./models/room.prisma
-  - ./models/schedule.prisma
   - ./models/user.prisma
+  - ./models/order.prisma
+  - ./models/Node.prisma
+  - ./models/comida.prisma
+  - ./models/empleados.prisma
+  - ./models/peliculas.prisma
+  - ./models/sala.prisma
+  - ./models/cine.prisma
+  - ./models/membresia.prisma
+  - ./models/sillas.prisma
+  - ./models/ticketCafeteria.prisma
 
 generate:
   - generator: typescript-client

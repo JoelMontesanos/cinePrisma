@@ -1,0 +1,9 @@
+type Chairs implements Node{
+    ID: ID! @id
+    createdAt: DateTime! @createdAt
+    updatedAt: DateTime! @updatedAt
+    color: String!
+    number: Int!
+    room: Room @relation(link: INLINE)!
+    line: Int!
+}

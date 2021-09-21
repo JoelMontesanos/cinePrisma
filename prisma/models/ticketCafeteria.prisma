@@ -1,0 +1,7 @@
+type Tiket {
+    id: ID! @id
+    product: Food @relation(link: INLINE)!
+    price: Float!
+    seller: Employees@relation(link: INLINE)
+    earnedPoints: Int!
+}

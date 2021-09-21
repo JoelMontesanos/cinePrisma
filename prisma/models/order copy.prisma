@@ -1,0 +1,12 @@
+type Order implements Node {
+    id: ID! @id
+    createdAt: DateTime! @createdAt
+    updatedAt: DateTime! @updatedAt
+    user: User @relation(link: INLINE)
+    movie: Movie @relation(link: INLINE)
+    price: Float!
+    room: Room @relation(link: INLINE)
+    chair: Chairs @relation(link: INLINE)
+    time: DateTime! 
+    earnedPoints: Int!
+}
