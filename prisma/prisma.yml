@@ -11,7 +11,7 @@ datamodel:
   - ./models/cine.prisma
   - ./models/membresia.prisma
   - ./models/sillas.prisma
-  - ./models/tyketCafeteria.prisma
+  - ./models/ticketCafeteria.prisma
 
 generate:
   - generator: typescript-client

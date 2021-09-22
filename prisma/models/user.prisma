@@ -5,4 +5,5 @@ type User implements Node {
   movie: Room! @relation(link: INLINE)
   points: Int!
   membership: Membership @relation(link: INLINE)
+  token: String @unique
 }
